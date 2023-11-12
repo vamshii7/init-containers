@@ -3,7 +3,6 @@ Init containers in Kubernetes are specialized containers that run before the mai
 
 # Multicontainer Pods
 Before directly jumping into the init containers, let's discuss multicontainer Pods. A multicontainer Pod is a Pod that contains two or more containers that share resources, such as network, storage, or memory. These containers work together as a single unit to perform a specific task. Remember, the spec.containers field in a Pod specification is an array that allows you to define multiple containers:
-
 apiVersion: v1
 kind: Pod
 metadata:
