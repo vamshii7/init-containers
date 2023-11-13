@@ -31,7 +31,7 @@ spec:
   - name: data
     emptyDir: {}
 ```
-Here, we defined two containers: app and logger. The app container runs the actual application, whereas the logger container uses the tail command to follow the nginx access log file. Both containers share a volume mount named data. Read this post to learn more about Kubernetes Pods. Now, apply the YAML file.  
+Here, we defined two containers: app and logger. The app container runs the actual application, whereas the logger container uses the tail command to follow the nginx access log file. Both containers share a volume mount named data. Now, apply the YAML file.  
 
 ```Kubectl apply -f multi-container-pod.yaml```
 
