@@ -6,7 +6,7 @@
   3. Concluding  
 
 # Multicontainer Pods
-Before directly jumping into the init containers, let's discuss multicontainer Pods. A multicontainer Pod is a Pod that contains two or more containers that share resources, such as network, storage, or memory. These containers work together as a single unit to perform a specific task. Remember, the spec.containers field in a Pod specification is an array that allows you to define multiple containers:
+Before directly jumping into the init containers, let's discuss multicontainer Pods. A multicontainer Pod is a Pod that contains two or more containers that share resources, such as network, storage, or memory. These containers work together as a single unit to perform a specific task. Remember, the **spec.containers field** in a **Pod specification** is an array that allows you to define multiple containers:
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -195,11 +195,6 @@ You can see in the screenshot that when I created the db-service in the Kubernet
 
 ![image](https://github.com/vamshii7/init-containers/assets/48650579/ebc621e3-4dbd-4183-b3d5-dd5fa6f5003c)
 
-# Concluding
+# Conclusion
 
 You have learned about multicontainer Pods and completed the Kubernetes init containers demo. Note that this is just a simple use case of Kubernetes init containers. In a production environment, you will often encounter more complex start requirements for containers.
-
-
-
-
-
